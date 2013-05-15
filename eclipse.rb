@@ -13,7 +13,9 @@ class Eclipse < Formula
   version '1.5.2'
 
   def install
-    prefix.install Dir['*']
+    files = Dir['*']
+    bin.install files.delete['eclipse']
+    prefix.install files
   end
 
   test do
