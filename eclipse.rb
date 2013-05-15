@@ -14,7 +14,10 @@ class Eclipse < Formula
 
   def install
     files = Dir['*']
-    bin.install files.delete['eclipse']
+    files -= %w{ eclipse readme }
+
+    bin.install 'eclipse'
+    doc.install 'readme'
     prefix.install files
   end
 
