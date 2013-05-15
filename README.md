@@ -7,7 +7,7 @@ To manually use these formulae follow the [installation instructions](#how-do-i-
 How do I install these formulae?
 --------------------------------
 
-Just `brew tap ecarey-r7/for` and then `brew install <formula>`.
+Just `brew tap ecarey-r7/formulae` and then `brew install <formula>`.
 
 If the formula conflicts with one from mxcl/master or another tap, you can `brew install ecarey-r7/formulae/<formula>`.
 
